@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.carta {
+    perspective: 1000px; /* Añade perspectiva para simular el efecto 3D */
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d; /* Permite transformaciones 3D en los descendientes */
+    transition: transform 1.5s ease; /* Agrega una transición suave a la transformación */
+}
+
+.carta:hover {
+    transform: rotateY(180deg); /* Rota la carta 180 grados cuando se pasa el ratón sobre ella */
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Oculta la cara posterior cuando la carta está girada */
+}
+
+.front {
+    transform: rotateY(0deg); /* Inicialmente muestra la cara frontal de la carta */
+}
+
+.back {
+    transform: rotateY(180deg); /* Inicialmente oculta la cara posterior de la carta */
+}
