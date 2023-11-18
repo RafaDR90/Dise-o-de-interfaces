@@ -1,0 +1,19 @@
+body{
+    display: flex;
+}
+.tarjeta{
+    margin: 20px;
+    width: 200px;
+    height: 350px;
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+}
+img{
+    width: 100%;
+}
+.texti{
+    flex-grow: 1;
+
+}

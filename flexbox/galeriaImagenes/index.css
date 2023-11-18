@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(202, 202, 202);
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    border: solid black;
+}
+.contenedor__imagen{
+    width: 200px;
+    margin: 3%;
+    
+}
+img{
+    width: 100%;
+}

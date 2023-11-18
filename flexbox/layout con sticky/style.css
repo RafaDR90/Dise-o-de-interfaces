@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+}
+main{
+    width: 100%;
+}
+header{
+    background-color: black;
+    height: 5vh;
+    width: 95%;
+    margin-left: 5%;
+}
+.main{
+    display: flex;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    width: 5%;
+    height: 100vh;
+}
+
+
+.contenedorNav{
+    background-color: aqua;
+    width: 100%;
+    height: 95%;
+}
+.img{
+    width: 100%;
+    height: 5%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+main section:nth-child(odd) {
+    background-color: brown;
+}
+
+main section:nth-child(even) {
+background-color: blanchedalmond;
+}
+.section--unic{
+    background-color: blanchedalmond !important;
+    height: 95vh !important;
+}
